@@ -32,15 +32,15 @@
 			<h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
 			<p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
 			<div class="form-survey w-50 p-5">
-				<form>
+				<form id="survey-form">
 					<label for="name" class="mt-5" id="name-label">Name</label>
-					<input type="text" class="form-control w-100" id="name" placeholder="Name">
+					<input type="text" class="form-control w-100" id="name" placeholder="Enter your name" required>
 					<label for="email" class="mt-5" id="email-label">Email</label>
-					<input type="email" class="form-control w-100" id="email" placeholder="Email">
+					<input type="email" class="form-control w-100" id="email" placeholder="Enter your Email" required>
 					<label for="age" class="mt-5" id="number-label">Age</label>
 					<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
 					<label for="role" class="mt-5">Which option best describes your current role?</label>
-					<select name="role" id="role" class="w-100" id="dropdown">
+					<select name="role" class="w-100" id="dropdown" required>
 						<option disabled selected value="">Select Current Role</option>
 						<option value="student">Student</option>
 						<option value="job">Full Time Job</option>
@@ -50,25 +50,25 @@
 					</select>
 					<p>Would you recommend freeCodeCamp to a friend?</p>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-Definitely">
-						<label class="form-check-label" for="Radio-Definitely">
+						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-Definitely" value="definitely">
+						<label class="form-check-label" for="Radio-Definitely" value="Definitely">
 							Definitely
 						</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-Maybe" checked>
+						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-Maybe" checked value="maybe">
 						<label class="form-check-label" for="Radio-Maybe">
 							Maybe
 						</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-NotSure">
+						<input class="form-check-input" type="radio" name="user-recommend" id="Radio-NotSure" value="not-sure">
 						<label class="form-check-label" for="Radio-NotSure">
 							Not sure
 						</label>
 					</div>
 					<p>What is your favorite feature of freeCodeCamp?</p>
-					<select name="favorite" id="favorite" class="w-100" id="dropdown">
+					<select name="favorite" id="favorite" class="w-100">
 						<option disabled selected value="">Select an option</option>
 						<option value="challenges">Challenges</option>
 						<option value="projects">Projects</option>
